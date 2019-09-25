@@ -43,6 +43,6 @@ def SNet(input_size = (400,400,3)):
     
     model.compile(optimizer=tf.keras.optimizers.Adam(1e-4), loss = 'binary_crossentropy', metrics=['accuracy'])
     # or you can use other metrics
-    #model.compile(optimizer=keras.optimizers.Adam(1e-4), loss = 'binary_crossentropy', metrics=['accuracy','f1_m',....])
+    #model.compile(optimizer=tf.keras.optimizers.Adam(1e-4), loss = 'binary_crossentropy', metrics=['accuracy','f1_m',....])
     
     return model
