@@ -45,7 +45,7 @@ dependencies = {
 
 Ankara University Computer Vision & Machine Learning Labaratory (CVML LAB) Turkish Sign Language (TSL) Dataset.
 
-Models architectures
+## Models architectures
 
 Model-1
 
