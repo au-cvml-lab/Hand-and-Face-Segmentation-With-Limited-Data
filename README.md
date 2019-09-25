@@ -54,3 +54,13 @@ Model-1
 Model-2
 
 ![SegNetwork-VGG](https://user-images.githubusercontent.com/23141486/65586920-a7328700-df8d-11e9-9c79-009eba1c5592.jpg)
+
+### Model Performances
+
+Model-1's performance is better than pretrained-vgg model ( model-2).
+
+![model_accuracy](https://user-images.githubusercontent.com/23141486/65591604-76565000-df95-11e9-8a3a-c504ae9ef07f.png)  ![model_loss](https://user-images.githubusercontent.com/23141486/65591610-79e9d700-df95-11e9-99f7-8e685fc32d88.png)
+
+
+
+
