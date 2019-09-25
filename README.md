@@ -8,7 +8,7 @@ Training.
 ```python
 from models import model1, model2
 from keras import Model
-import utils
+import metrics
 from keras.applications.vgg16 import VGG16
 
 modelSNet = model1.SNet() # For using unet based architecture
@@ -30,9 +30,9 @@ modelSNet.fit(...)
 
 # Metrics for evaluting models, if you want to use pretrained model.
 dependencies = {
-	'f1_m' = utils.f1_m,
-	'recall_m' = utils.recall_m,
-	'precision_m' = utils.precision_m
+	'f1_m' = metrics.f1_m,
+	'recall_m' = metrics.recall_m,
+	'precision_m' = metrics.precision_m
 }
 
 
