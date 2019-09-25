@@ -1,11 +1,10 @@
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.layers import Conv2D, MaxPooling2D,Dropout,concatenate,UpSampling2D
+import keras
+from keras.layers import Conv2D, MaxPooling2D,Dropout,concatenate,UpSampling2D
 
 def SNet(input_size = (400,400,3)):
     
-    model = tf.keras.Model()
-    inputs = tf.keras.Input(input_size)
+    model = keras.Model()
+    inputs = keras.Input(input_size)
 
     conv1 = Conv2D(32, (3, 3), activation='relu', padding='same' )(inputs)
     conv1 = Conv2D(32, (3, 3), activation='relu', padding='same')(conv1)
@@ -39,9 +38,9 @@ def SNet(input_size = (400,400,3)):
     
     out = Conv2D( 1, (1, 1) , activation='sigmoid')(conv6)
     
-    model = tf.keras.Model(inputs=inputs, outputs=out)
+    model = keras.Model(inputs=inputs, outputs=out)
     
-    model.compile(optimizer=tf.keras.optimizers.Adam(1e-4), loss = 'binary_crossentropy', metrics=['accuracy'])
+    model.compile(optimizer=keras.optimizers.Adam(1e-4), loss = 'binary_crossentropy', metrics=['accuracy'])
     # or you can use other metrics
     #model.compile(optimizer=tf.keras.optimizers.Adam(1e-4), loss = 'binary_crossentropy', metrics=['accuracy','f1_m',....])
     
