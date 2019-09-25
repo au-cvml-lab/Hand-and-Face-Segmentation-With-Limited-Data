@@ -8,11 +8,12 @@ Hands and Face Segmentation with Deep Convolutional Networks using limited label
 Training.
 
 ```python
-from models import SNet, vggPre
-from utils import *
+from models import vggPre, SNet
+from keras import Model
+import utils
 from keras.applications.vgg16 import VGG16
 
-modelSNet = SNet() # For using unet based architecture
+modelSNet = SNet.SNet() # For using unet based architecture
 
 # Using vgg based model.
 modelVgg = VGG16(weights="imagenet", include_top=False, input_shape=(400,400,3))
@@ -22,7 +23,7 @@ base_model = Model(inputs=model.layers[0].output, outputs=model.layers[10].outpu
 for layer in base_model.layers:
     layer.trainable = False
     
-modelVGG = vggPre(base_model)
+modelVGG = vggPre.vggPre(base_model)
 
 modelVGG.fit(...)
 modelSNet.fit(...)
@@ -31,9 +32,9 @@ modelSNet.fit(...)
 
 # Metrics for evaluting models, if you want to use pretrained model.
 dependencies = {
-	'f1_m' = f1_m,
-	'recall_m' = recall_m,
-	'precision_m' = precision_m
+	'f1_m' = utils.f1_m,
+	'recall_m' = utils.recall_m,
+	'precision_m' = utils.precision_m
 }
 
 
