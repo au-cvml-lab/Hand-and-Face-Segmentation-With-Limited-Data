@@ -43,7 +43,7 @@ dependencies = {
 
 Ankara University Computer Vision & Machine Learning Labaratory (CVML LAB) Turkish Sign Language (TSL) Dataset.
 
-For this study we used only a small portion of the dataset which is consist of Turkish Sign Language videos.You can access here: 
+For this study we used only a small portion of the dataset which is consist of Turkish Sign Language videos.You can access numpy version here: 
 
 * Images: https://drive.google.com/file/d/10zZun4ruE8jQZFvX5Ec6TS7OFmwQW6K8/view?usp=sharing
 * Labels: https://drive.google.com/file/d/1WAnuNv_mFntQ2yrz1l7lzddU5VP2TQOl/view?usp=sharing
