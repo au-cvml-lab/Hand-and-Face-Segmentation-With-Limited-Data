@@ -49,12 +49,12 @@ Ankara University Computer Vision & Machine Learning Labaratory (CVML LAB) Turki
 
 
 
-## Models architectures
+#### Models architectures
 
-Mode1-1
+Model-1
+
+![snet](https://user-images.githubusercontent.com/23141486/65591140-9c2f2500-df94-11e9-83bd-a02072e7ae88.jpg)
+
+Model-2
 
 ![SegNetwork-VGG](https://user-images.githubusercontent.com/23141486/65586920-a7328700-df8d-11e9-9c79-009eba1c5592.jpg)
-
-
-
-
