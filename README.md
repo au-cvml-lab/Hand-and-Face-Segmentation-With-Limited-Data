@@ -48,7 +48,7 @@ For this study we used only a small portion ( 400 frames ) of the dataset which 
 * Images: https://drive.google.com/file/d/10zZun4ruE8jQZFvX5Ec6TS7OFmwQW6K8/view?usp=sharing
 * Labels: https://drive.google.com/file/d/1WAnuNv_mFntQ2yrz1l7lzddU5VP2TQOl/view?usp=sharing
 
-( The whole dataset will be published soon.)
+( The whole dataset will be published soon at https://cvml.ankara.edu.tr/ )
 
 
 ## Models architectures
